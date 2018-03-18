@@ -134,7 +134,7 @@ namespace ConsoleApplication1
                 Console.WriteLine("Enter A for adding words, enter D for dictating, enter E for exiting:");
                 switch (Console.ReadLine())
                 {
-                    case "A": while (addWords(mc)) ; break;
+                    case "A": while (addWords(mc)) ; Console.WriteLine(); break;
                     case "D": dictate(mc); break;
                     case "E": return;
                     default: Console.WriteLine("Ouch!Wrong letter!"); break;
