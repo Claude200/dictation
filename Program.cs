@@ -92,6 +92,7 @@ namespace ConsoleApplication1
                 catch(MySqlException e)
                 {
                     Console.WriteLine(e.ToString());
+                    Console.ReadKey();
                     Environment.Exit(0);
                 }
             }
