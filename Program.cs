@@ -149,7 +149,7 @@ namespace ConsoleApplication1
             var fr = Console.ReadLine();
             mc.ExeUpdate(string.Format("INSERT INTO words ( Chinese, French ) VALUES( \"{0}\", \"{1}\" );", cn, fr));
             Console.Write("Would you like to continue typing?(Y or N)");
-            return Console.ReadKey().ToString() == "Y";
+            return Console.ReadLine() == "Y";
 
         }
         static void dictate(Test.MysqlConnector mc)
